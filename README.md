@@ -11,12 +11,22 @@ This course introduces the basic concepts and techniques of computer vision, inc
 - Deep learning applications in computer vision
 
 ## Repository Structure
-The repository is organized as follows:
-- `Lab1/`: Contains the first lab assignment focusing on basic image processing operations
-- `Lab2/`: Contains the second lab assignment focusing on feature detection and matching
-- `Lab3/`: Contains the third lab assignment focusing on image segmentation
-- `Lab4/`: Contains the fourth lab assignment focusing on object detection
-- `Lab5/`: Contains the fifth lab assignment focusing on deep learning applications
+The repository contains the following main components:
+
+### Face Detection and Recognition System
+- `face_detection.py`: Core face detection module that implements face detection algorithms using OpenCV and deep learning models. This module provides the fundamental functionality for detecting faces in images and video streams.
+
+- `face_stream_system.py`: Real-time face detection and tracking system that processes video streams from cameras. This module:
+  - Captures video input from webcam or video files
+  - Processes frames in real-time
+  - Detects and tracks faces
+  - Displays results with bounding boxes and labels
+
+- `face_stream_verify.py`: Face verification system that:
+  - Compares detected faces against a database of known faces
+  - Implements face recognition and identity verification
+  - Provides real-time feedback on face matches
+  - Can be used for access control or identity verification applications
 
 ## Requirements
 - Python 3.x
@@ -36,9 +46,14 @@ git clone https://github.com/hahahuy/ComputerV-Intro2C.git
 pip install -r requirements.txt
 ```
 
-3. Navigate to the specific lab directory you want to work on:
+3. Run the face detection system:
 ```bash
-cd LabX  # where X is the lab number
+python face_stream_system.py
+```
+
+For face verification:
+```bash
+python face_stream_verify.py
 ```
 
 ## Author
