@@ -57,9 +57,9 @@ python face_stream_verify.py
 ```
 
 ## Author
-- Name: [Your Name]
-- Student ID: [Your Student ID]
-- University: [Your University Name]
+- Name: Ha Quang Huy
+- Student ID: SESEIU21007
+- University: HCMIU
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
